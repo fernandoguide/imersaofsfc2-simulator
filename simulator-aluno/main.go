@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
+	ckafka "github.com/confluentinc/confluent-kafka-go/kafka"
 	kafka2 "github.com/fernandoguide/imersaofsfc2-simulator/simulator-aluno/application/kafka"
 	"github.com/fernandoguide/imersaofsfc2-simulator/simulator-aluno/infra/kafka"
-	ckafka "github.com/confluentinc/confluent-kafka-go/kafka"
 	"github.com/joho/godotenv"
 	"log"
 )
-
+// kafka-console-producer --bootstrap-server=localhost92 --topic=route.new-direction
+// kafka-console-consumer --bootstrap-server=localhost92 --topic=route.new-direction
 func init() {
 	err := godotenv.Load()
 	if err != nil {

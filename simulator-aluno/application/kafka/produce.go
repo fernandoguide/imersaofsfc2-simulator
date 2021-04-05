@@ -19,7 +19,7 @@ func Produce(msg *ckafka.Message) {
 	producer := kafka.NewKafkaProducer()
 	route := route2.NewRoute()
 	_ = json.Unmarshal(msg.Value, &route)
-	route.LoadPositions()
+	_ = route.LoadPositions()
 	positions, err := route.ExportJsonPositions()
 	if err != nil {
 		log.Println(err.Error())
