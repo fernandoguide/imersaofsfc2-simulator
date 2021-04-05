@@ -9,7 +9,7 @@ import (
 	"log"
 )
 // kafka-console-producer --bootstrap-server=localhost92 --topic=route.new-direction
-// kafka-console-consumer --bootstrap-server=localhost92 --topic=route.new-direction
+// kafka-console-consumer --bootstrap-server=localhost:9092 --topic=route.new-position --group=terminal
 func init() {
 	err := godotenv.Load()
 	if err != nil {
