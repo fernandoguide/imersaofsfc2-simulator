@@ -1,8 +1,8 @@
-module github.com/fernandoguide/imersaofsfc2-simulator
+module github.com/fernandoguide/imersaofsfc2-simulator/simulator-aluno
 
 go 1.16
 
 require (
-	github.com/ramya-rao-a/go-outline v0.0.0-20200117021646-2a048b4510eb // indirect
-	golang.org/x/tools v0.1.0 // indirect
+	github.com/confluentinc/confluent-kafka-go v1.6.1
+	github.com/joho/godotenv v1.3.0
 )
